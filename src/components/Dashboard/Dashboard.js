@@ -50,7 +50,7 @@ const Dashboard = () => {
                 </Row>
                 <Row className='mt-4'>
                     {/* <Col className='col-2 '></Col> */}
-                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                    <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-xl-0'>
                         <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={12}
@@ -61,7 +61,7 @@ const Dashboard = () => {
                         logo={facebookLogo}
                         socialMediaCard={'facebookDiv'} />
                     </Col>
-                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                    <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-xl-0'>
                         <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={99}
@@ -72,7 +72,7 @@ const Dashboard = () => {
                         logo={twitterLogo}
                         socialMediaCard={'twitterDiv'} />
                     </Col>
-                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                    <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4'>
                         <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={1099}
@@ -84,7 +84,7 @@ const Dashboard = () => {
                         divColor={'instaDiv'}
                         socialMediaCard={'instagramDiv'} />
                     </Col>
-                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                    <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-lg-0'>
                         <SocialMediaCard
                         txtColor={'redTxt'}
                         smallNumbers={144}
@@ -98,7 +98,7 @@ const Dashboard = () => {
                     {/* <Col className='col-2 '></Col> */}
                 </Row>
                 {/* <Container className='mt-5'> */}
-                    <Row className='mt-5'>
+                    <Row className='mt-4'>
                         {/* <Col className='col-2'></Col> */}
                         <Col className='col-12 d-flex flex-column align-items-start'>
                             <p className='overviewTxt'>Overview - Today</p>
@@ -109,7 +109,7 @@ const Dashboard = () => {
                 {/* <Container> */}
                     <Row>
                         {/* <Col className='col-2 mx-2'></Col> */}
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-xl-0'>
                             <OverviewCard
                             statDataType={'Page Views'}
                             logo={facebookLogo}
@@ -119,7 +119,7 @@ const Dashboard = () => {
                             percentage={3}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={facebookLogo}
@@ -129,7 +129,7 @@ const Dashboard = () => {
                             percentage={2}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-md-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={instagramLogo}
@@ -139,7 +139,7 @@ const Dashboard = () => {
                             percentage={2257}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Profile Views'}
                             logo={instagramLogo}
@@ -152,9 +152,9 @@ const Dashboard = () => {
                         {/* <Col className='col-2 mx-2'></Col> */}
                     </Row>
                     {/* Second row of overview cards */}
-                    <Row className='mt-4'>
+                    <Row className='mt-4 mt-md-1 mt-lg-4'>
                         {/* <Col className='col-2 mx-2'></Col> */}
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-xl-0'>
                             <OverviewCard
                             statDataType={'Retweets'}
                             logo={twitterLogo}
@@ -164,7 +164,7 @@ const Dashboard = () => {
                             percentage={303}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={twitterLogo}
@@ -174,7 +174,7 @@ const Dashboard = () => {
                             percentage={553}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={youtubeLogo}
@@ -184,7 +184,7 @@ const Dashboard = () => {
                             percentage={19}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
+                        <Col className='col-xl-3 col-lg-6 col-12 col-md-6 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Total Views'}
                             logo={youtubeLogo}

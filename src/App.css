@@ -16,6 +16,7 @@
   --cardBg: hsl(227, 47%, 96%);
   --cardBgHover: hsl(228, 50%, 92%);
   --lineColor: hsl(230, 17%, 14%);
+  --overviewTxtColor: hsl(228, 12%, 44%);
   --primaryText: hsl(230, 17%, 14%);
   --secondaryText: hsl(228, 12%, 44%);
   /* transition: 0.1s ease-in-out; */
@@ -28,6 +29,7 @@
   --cardBg: hsl(228, 28%, 20%);
   --cardBgHover: hsl(228, 28%, 24%);
   --lineColor: hsl(228, 12%, 44%);
+  --overviewTxtColor: hsl(0, 0%, 100%);
   --primaryText: hsl(0, 0%, 100%);
   --secondaryText: hsl(228, 12%, 44%);
   /* transition: 0.1s ease-in-out; */
@@ -45,6 +47,7 @@ body {
   background-color: var(--topBgPattern);
   width: 100%;
   height: 13.5rem;
+  border-radius: 0rem 0rem 1.5rem 1.5rem;
   z-index: -1;
   position: absolute;
   top: -.2rem;
@@ -88,10 +91,11 @@ body {
 .overviewTxt {
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--overviewTxtColor);
 }
 
 .bigNumbers {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
   color: var(--primaryText);
 }
@@ -119,7 +123,7 @@ body {
 .facebookDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 
 .twitterDiv {
@@ -135,7 +139,7 @@ body {
 .twitterDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 
 .instagramDiv {
@@ -150,7 +154,7 @@ body {
 .instagramDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 
 .instaDiv {
@@ -173,7 +177,7 @@ body {
 .youtubeDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 
 .overviewCard {
@@ -184,7 +188,7 @@ body {
   color: var(--secondaryText);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  transition: 0.1s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
 }
 
 .overviewCard:hover {
@@ -224,9 +228,13 @@ body {
   left: 0;
   right: -.1rem;
   bottom: 0;
-  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background: var(--toggle);
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.slider:hover {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .slider:before {
@@ -242,11 +250,11 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  /* background-color: #2196F3; */
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  /* box-shadow: 0 0 1px #2196F3; */
 }
 
 input:checked + .slider:before {

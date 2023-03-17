@@ -5,7 +5,7 @@ import '../../App.css';
 const Toggle = ({ toggleFunc }) => {
     return (
         <>
-            <label class="switch mt-2">
+            <label className="switch mt-2">
                 <input type="checkbox"></input>
                 <span className="slider round" onClick={toggleFunc}></span>
             </label>
