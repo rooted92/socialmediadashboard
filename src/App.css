@@ -106,7 +106,7 @@ body {
 .facebookDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .twitterDiv {
@@ -122,7 +122,7 @@ body {
 .twitterDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .instagramDiv {
@@ -137,7 +137,7 @@ body {
 .instagramDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .instaDiv {
@@ -160,7 +160,7 @@ body {
 .youtubeDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .overviewCard {
@@ -171,7 +171,7 @@ body {
   color: var(--secondaryText);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .overviewCard:hover {
@@ -209,7 +209,7 @@ body {
   cursor: pointer;
   top: 1px;
   left: 0;
-  right: -.03rem;
+  right: -.1rem;
   bottom: 0;
   background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   -webkit-transition: .4s;
@@ -221,7 +221,7 @@ body {
   content: "";
   height: 20px;
   width: 20px;
-  left: .1rem;
+  left: .125rem;
   bottom: 3px;
   background-color: var(--topBgPattern);
   -webkit-transition: .4s;

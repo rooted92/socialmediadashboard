@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../App.css';
 
-        // {/* <button onClick={toggleFunc}>Toggle</button> */ }
+// {/* <button onClick={toggleFunc}>Toggle</button> */ }
 const Toggle = ({ toggleFunc }) => {
     return (
         <>
             <label class="switch mt-2">
                 <input type="checkbox"></input>
-                    <span class="slider round" onClick={toggleFunc}></span>
+                <span className="slider round" onClick={toggleFunc}></span>
             </label>
         </>
     );

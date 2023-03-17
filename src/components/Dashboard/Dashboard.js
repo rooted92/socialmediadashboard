@@ -40,8 +40,8 @@ const Dashboard = () => {
                         <p className='m-0 bold'>Total Followers: 23,004</p>
                     </Col>
                     {/* <Col className='col-2'></Col> */}
-                    <Col className='col-4 d-flex flex-row justify-content-end'>
-                        <p className='mx-2 mt-3 bold'>Dark Mode</p>
+                    <Col className='col-4 d-flex flex-row justify-content-end align-self-end'>
+                        <p className='mt-2 mx-3 pt-1 bold'>Dark Mode</p>
                         <ToggleTheme toggleFunc={handleThemeToggle} />
                     </Col>
                     {/* <Col className='col-2'></Col> */}
