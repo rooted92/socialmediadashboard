@@ -1,38 +1,138 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inter:wght@400;700&family=Manrope:wght@800&family=Philosopher&family=Poor+Story&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
+
+:root {
+  --limeGreen: hsl(163, 72%, 41%);
+  --brightRed: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+}
+
+.lightTheme {
+  --toggle: hsl(230, 22%, 74%);
+  --bgColor: hsl(0, 0%, 100%);
+  --topBgPattern: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
+  --primaryText: hsl(230, 17%, 14%);
+  --secondaryText: hsl(228, 12%, 44%);
+}
+
+.darkTheme {
+  --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --bgColor: hsl(230, 17%, 14%);
+  --topBgPattern: hsl(232, 19%, 15%);
+  --cardBg: hsl(228, 28%, 20%);
+  --primaryText: hsl(0, 0%, 100%);
+  --secondaryText: hsl(228, 12%, 44%);
+}
+
+body {
   text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: .875rem;
+  background-color: var(--bgColor);
+  color: var(--secondaryText);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topBg {
+  background-color: var(--topBgPattern);
+  width: 100vmax;
+  height: 13.5rem;
+  z-index: -1;
+  position: absolute;
+  top: -.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.greenTxt {
+  padding: 0rem;
+  margin: 0rem;
+  margin-left: .15rem;
+  margin-right: .15rem;
+  color: var(--limeGreen);
+  font-weight: 700;
+  font-size: .8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.redTxt {
+  padding: 0rem;
+  margin: 0rem;
+  margin-left: .15rem;
+  margin-right: .15rem;
+  color: var(--brightRed);
+  font-weight: 700;
+  font-size: .8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primaryText);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.overviewTxt {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bigNumbers {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primaryText);
+}
+
+.followersTxt {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.facebookDiv {
+  background-color: var(--cardBg);
+  min-width: 12rem; 
+  min-height: 10rem;
+  border-radius: .2rem .2rem .2rem .2rem;
+  color: var(--secondaryText);
+  border: none;
+  border-top: solid 3px var(--facebook);
+}
+
+.twitterDiv {
+  background-color: var(--cardBg);
+  min-width: 12rem; 
+  min-height: 10rem;
+  border-radius: .2rem .2rem .2rem .2rem;
+  color: var(--secondaryText);
+  border: none;
+  border-top: solid 3px var(--twitter);
+}
+
+.instagramDiv {
+  background-color: var(--cardBg);
+  min-width: 12rem; 
+  min-height: 10rem;
+  border-radius: .2rem .2rem .2rem .2rem;
+  color: var(--secondaryText);
+  /* border-top: solid 3px var(--twitter); */
+}
+
+.instaDiv {
+  background-image: var(--instagram);
+  width: 100%;
+  height: 3px;
+  border-radius: .2rem .2rem 0rem 0rem;
+}
+
+.youtubeDiv {
+  background-color: var(--cardBg);
+  min-width: 12rem; 
+  min-height: 10rem;
+  border-radius: .2rem .2rem .2rem .2rem;
+  color: var(--secondaryText);
+  border: none;
+  border-top: solid 3px var(--youtube);
 }

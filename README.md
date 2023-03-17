@@ -1,3 +1,10 @@
+// First we need to make or file structure
+Folder for dark theme folder for light theme
+make a bool in App component that checks toggle if true make dark if false make light
+make darkdashboard component, lightdashboard component, toggle component, socialmediacard component, overviewcard component
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

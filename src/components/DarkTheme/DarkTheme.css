@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200&family=Dosis&family=Fugaz+One&family=Gochi+Hand&family=Inter:wght@400;700&family=Manrope:wght@800&family=Philosopher&family=Poor+Story&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Source+Sans+Pro&family=Space+Mono&family=Special+Elite&display=swap');
+
+:root {
+    --limgGreen: hsl(163, 72%, 41%);
+    --brightRed: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    --youtube: hsl(348, 97%, 39%);
+}
+
+.lightTheme {
+    --toggle: hsl(230, 22%, 74%);
+    --bgColor: hsl(0, 0%, 100%);
+    --topBgPattern: hsl(225, 100%, 98%);
+    --cardBg: hsl(227, 47%, 96%);
+    --primaryText: hsl(228, 12%, 44%);
+    --secondaryText: hsl(230, 17%, 14%);
+}
+
+.darkTheme {
+    --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --bgColor: hsl(230, 17%, 14%);
+    --topBgPattern: hsl(232, 19%, 15%);
+    --cardBg: hsl(228, 28%, 20%);
+    --primaryText: hsl(228, 12%, 44%);
+    --secondaryText: hsl(0, 0%, 100%);
+}
+
+body {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: .875rem;
+    background-color: var(--bgColor);
+    color: var(--secondaryText);
+  }
+  
+  .topBg {
+    background-color: var(--topBgPattern);
+    width: 100vmax;
+    height: 10rem;
+    z-index: -1;
+    position: absolute;
+  }
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondaryText);
+    
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.content {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.socialMediaCard {
+    background-color:  var(--cardBg);
+    min-width: 10rem;
+    min-height: 10rem;
+    border-radius: .2rem;
+}
+
+.facebookDiv {
+    background-color: hsl(208, 92%, 53%);
+    height: .2rem;
+    width: auto;
+    border-radius: .2rem .2rem 0rem 0rem;
+}
+
+.twitterDiv {
+    background-color: hsl(203, 89%, 53%);
+    height: .2rem;
+    width: auto;
+    border-radius: .2rem .2rem 0rem 0rem;
+}
+
+.instagramDiv {
+    /* include 'to right' key words to make gradient go from left to right */
+    background-color: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) ;
+    height: .2rem;
+    width: auto;
+    border-radius: .2rem .2rem 0rem 0rem;
+}
+
+.youtubeDiv {
+    background-color: hsl(348, 97%, 39%);
+    height: .2rem;
+    width: auto;
+    border-radius: .2rem .2rem 0rem 0rem;
+}
