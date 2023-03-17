@@ -18,15 +18,14 @@ const Dashboard = () => {
     const body = document.body;
     body.classList.add(theme);
 
+    // May present issues if not using boolean when setting up local storage preference
     const handleThemeToggle = () => {
         if (theme === 'darkTheme') {
             body.classList.remove(theme);
             setTheme('lightTheme');
-            console.log(theme)
         } else {
             body.classList.remove(theme);
             setTheme('darkTheme');
-            console.log(theme);
         }
     }
 
@@ -35,20 +34,23 @@ const Dashboard = () => {
             <Container className='p-5'>
                 <Row className='mb-4'>
                     {/* <Col className='col-2 '></Col> */}
-                    <Col className='col-8 d-flex flex-column align-items-start'>
+                    <Col className='col-md-8 col-xs-8 col-sm-8 col-12 d-flex flex-column align-items-start'>
                         <p className='title m-0'>Social Media Dashboard</p>
                         <p className='m-0 bold'>Total Followers: 23,004</p>
                     </Col>
                     {/* <Col className='col-2'></Col> */}
-                    <Col className='col-4 d-flex flex-row justify-content-end align-self-end'>
-                        <p className='mt-2 mx-3 pt-1 bold'>Dark Mode</p>
+                    <Col className='col-12 d-md-none'>
+                    <div className='lineMobile '></div>
+                    </Col>
+                    <Col className='col-md-4 col-12 d-flex flex-row justify-content-between justify-content-md-end align-self-md-end'>
+                        <p className='mt-2 mx-0 mx-md-3 pt-1 bold'>Dark Mode</p>
                         <ToggleTheme toggleFunc={handleThemeToggle} />
                     </Col>
                     {/* <Col className='col-2'></Col> */}
                 </Row>
                 <Row className='mt-4'>
                     {/* <Col className='col-2 '></Col> */}
-                    <Col className='col-3'>
+                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                         <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={12}
@@ -59,7 +61,7 @@ const Dashboard = () => {
                         logo={facebookLogo}
                         socialMediaCard={'facebookDiv'} />
                     </Col>
-                    <Col className='col-3 '>
+                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                         <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={99}
@@ -70,7 +72,7 @@ const Dashboard = () => {
                         logo={twitterLogo}
                         socialMediaCard={'twitterDiv'} />
                     </Col>
-                    <Col className='col-3 '>
+                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                         <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={1099}
@@ -82,7 +84,7 @@ const Dashboard = () => {
                         divColor={'instaDiv'}
                         socialMediaCard={'instagramDiv'} />
                     </Col>
-                    <Col className='col-3 '>
+                    <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                         <SocialMediaCard
                         txtColor={'redTxt'}
                         smallNumbers={144}
@@ -107,7 +109,7 @@ const Dashboard = () => {
                 {/* <Container> */}
                     <Row>
                         {/* <Col className='col-2 mx-2'></Col> */}
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Page Views'}
                             logo={facebookLogo}
@@ -117,7 +119,7 @@ const Dashboard = () => {
                             percentage={3}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={facebookLogo}
@@ -127,7 +129,7 @@ const Dashboard = () => {
                             percentage={2}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={instagramLogo}
@@ -137,7 +139,7 @@ const Dashboard = () => {
                             percentage={2257}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Profile Views'}
                             logo={instagramLogo}
@@ -152,7 +154,7 @@ const Dashboard = () => {
                     {/* Second row of overview cards */}
                     <Row className='mt-4'>
                         {/* <Col className='col-2 mx-2'></Col> */}
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Retweets'}
                             logo={twitterLogo}
@@ -162,7 +164,7 @@ const Dashboard = () => {
                             percentage={303}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={twitterLogo}
@@ -172,7 +174,7 @@ const Dashboard = () => {
                             percentage={553}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Likes'}
                             logo={youtubeLogo}
@@ -182,7 +184,7 @@ const Dashboard = () => {
                             percentage={19}
                             overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-3'>
+                        <Col className='col-xl-3 col-lg-3 col-12 mb-4 mb-lg-0'>
                             <OverviewCard
                             statDataType={'Total Views'}
                             logo={youtubeLogo}

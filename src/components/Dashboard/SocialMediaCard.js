@@ -7,7 +7,7 @@ const SocialMediaCard = ({ logo, socialMediaCard, divColor, handle, arrowImg, sm
     return (
         <>
             <div className={socialMediaCard}>
-                <div className={divColor}></div>
+                <div className={divColor}></div> 
                 <Container className='m-0 p-0'>
                     <Row className='mt-4 p-0'>
                         <Col className='col-12 d-flex justify-content-center'>

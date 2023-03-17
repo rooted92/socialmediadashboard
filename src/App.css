@@ -15,8 +15,10 @@
   --topBgPattern: hsl(225, 100%, 98%);
   --cardBg: hsl(227, 47%, 96%);
   --cardBgHover: hsl(228, 50%, 92%);
+  --lineColor: hsl(230, 17%, 14%);
   --primaryText: hsl(230, 17%, 14%);
   --secondaryText: hsl(228, 12%, 44%);
+  /* transition: 0.1s ease-in-out; */
 }
 
 .darkTheme {
@@ -25,8 +27,10 @@
   --topBgPattern: hsl(232, 19%, 15%);
   --cardBg: hsl(228, 28%, 20%);
   --cardBgHover: hsl(228, 28%, 24%);
+  --lineColor: hsl(228, 12%, 44%);
   --primaryText: hsl(0, 0%, 100%);
   --secondaryText: hsl(228, 12%, 44%);
+  /* transition: 0.1s ease-in-out; */
 }
 
 body {
@@ -39,7 +43,7 @@ body {
 
 .topBg {
   background-color: var(--topBgPattern);
-  width: 100vmax;
+  width: 100%;
   height: 13.5rem;
   z-index: -1;
   position: absolute;
@@ -67,9 +71,18 @@ body {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--primaryText);
+}
+
+.lineMobile {
+  margin-top: 1rem;
+  margin-bottom: .7rem;
+  width: 100%;
+  height: 1px;
+  background-color: var(--lineColor);
+  border-radius: 1px;
 }
 
 .overviewTxt {
@@ -106,7 +119,7 @@ body {
 .facebookDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .twitterDiv {
@@ -122,7 +135,7 @@ body {
 .twitterDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .instagramDiv {
@@ -137,7 +150,7 @@ body {
 .instagramDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .instaDiv {
@@ -160,7 +173,7 @@ body {
 .youtubeDiv:hover {
   background-color: var(--cardBgHover);
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .overviewCard {
@@ -171,7 +184,7 @@ body {
   color: var(--secondaryText);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .overviewCard:hover {
