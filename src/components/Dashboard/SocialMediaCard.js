@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const DarkSocialMediaCard = ({ logo, socialMediaCard, divColor, handle, arrowImg, smallNumbers, numOfFollowers, supporterType, txtColor }) => {
+const SocialMediaCard = ({ logo, socialMediaCard, divColor, handle, arrowImg, smallNumbers, numOfFollowers, supporterType, txtColor }) => {
     return (
         <>
             <div className={socialMediaCard}>
@@ -12,7 +12,7 @@ const DarkSocialMediaCard = ({ logo, socialMediaCard, divColor, handle, arrowImg
                     <Row className='mt-4 p-0'>
                         <Col className='col-12 d-flex justify-content-center'>
                             <img className='mx-1' src={logo} alt='social-media-logo'></img>
-                            <p className='mx-1 m-0'>{handle}</p>
+                            <p className='mx-1 m-0 bold'>{handle}</p>
                         </Col>
                     </Row>
                     <Row>
@@ -34,4 +34,4 @@ const DarkSocialMediaCard = ({ logo, socialMediaCard, divColor, handle, arrowImg
     );
 }
 
-export default DarkSocialMediaCard;
+export default SocialMediaCard;

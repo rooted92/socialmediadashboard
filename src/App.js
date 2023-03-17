@@ -6,7 +6,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import DarkDashboard from './components/DarkTheme/DarkDashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
         <div className='topBg'>
 
         </div>
-        <DarkDashboard />
+        <Dashboard />
     </div>
   );
 }

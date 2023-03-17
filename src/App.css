@@ -93,7 +93,7 @@ body {
 
 .facebookDiv {
   background-color: var(--cardBg);
-  max-width: 15rem; 
+  min-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
@@ -103,7 +103,7 @@ body {
 
 .twitterDiv {
   background-color: var(--cardBg);
-  max-width: 15rem; 
+  min-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
@@ -113,7 +113,7 @@ body {
 
 .instagramDiv {
   background-color: var(--cardBg);
-  max-width: 15rem; 
+  min-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
@@ -129,10 +129,18 @@ body {
 
 .youtubeDiv {
   background-color: var(--cardBg);
-  max-width: 15rem; 
+  min-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
   border: none;
   border-top: solid 3px var(--youtube);
+}
+
+.overviewCard {
+  background-color: var(--cardBg);
+  min-width: 15rem;
+  min-height: auto;
+  border-radius: .2rem .2rem .2rem .2rem;
+  color: var(--secondaryText);
 }

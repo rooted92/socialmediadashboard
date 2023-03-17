@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../App.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import DarkSocialMediaCard from './DarkSocialMediaCard';
-import DarkToggle from './DarkToggle';
+import SocialMediaCard from './SocialMediaCard';
+import OverviewCard from './OverviewCard';
+import DarkToggle from './Toggle';
 import facebookLogo from '../../images/icon-facebook.svg';
 import instagramLogo from '../../images/icon-instagram.svg';
 import twitterLogo from '../../images/icon-twitter.svg';
@@ -11,7 +12,7 @@ import youtubeLogo from '../../images/icon-youtube.svg';
 import IconUp from '../../images/icon-up.svg';
 import IconDown from '../../images/icon-down.svg';
 
-const DarkDashboard = () => {
+const Dashboard = () => {
 
     const [theme, setTheme] = useState('darkTheme');
     const body = document.body;
@@ -44,10 +45,10 @@ const DarkDashboard = () => {
                     </Col>
                     {/* <Col className='col-2'></Col> */}
                 </Row>
-                <Row className='mt-4 d-flex justify'>
+                <Row className='mt-4'>
                     {/* <Col className='col-2 '></Col> */}
                     <Col className='col-3'>
-                        <DarkSocialMediaCard
+                        <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={12}
                         arrowImg={IconUp}
@@ -58,7 +59,7 @@ const DarkDashboard = () => {
                         socialMediaCard={'facebookDiv'} />
                     </Col>
                     <Col className='col-3 '>
-                        <DarkSocialMediaCard
+                        <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={99}
                         arrowImg={IconUp}
@@ -69,7 +70,7 @@ const DarkDashboard = () => {
                         socialMediaCard={'twitterDiv'} />
                     </Col>
                     <Col className='col-3 '>
-                        <DarkSocialMediaCard
+                        <SocialMediaCard
                         txtColor={'greenTxt'}
                         smallNumbers={1099}
                         arrowImg={IconUp}
@@ -81,7 +82,7 @@ const DarkDashboard = () => {
                         socialMediaCard={'instagramDiv'} />
                     </Col>
                     <Col className='col-3 '>
-                        <DarkSocialMediaCard
+                        <SocialMediaCard
                         txtColor={'redTxt'}
                         smallNumbers={144}
                         arrowImg={IconDown}
@@ -102,29 +103,43 @@ const DarkDashboard = () => {
                         {/* <Col className='col-2'></Col> */}
                     </Row>
                 {/* </Container> */}
-                <Container>
+                {/* <Container> */}
                     <Row>
-                        <Col className='col-2 mx-2'></Col>
-                        <Col className='col-2 mx-2'>
-
+                        {/* <Col className='col-2 mx-2'></Col> */}
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Page Views'}
+                            logo={facebookLogo}
+                            statDataNumbers={87}
+                            overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-2 mx-2'>
-
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Likes'}
+                            logo={facebookLogo}
+                            statDataNumbers={52}
+                            overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-2 mx-2'>
-
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Likes'}
+                            logo={instagramLogo}
+                            statDataNumbers={5462}
+                            overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-2 mx-2'>
-
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Profile Views'}
+                            logo={instagramLogo}
+                            statDataNumbers={52}
+                            overviewCard={'overviewCard'} />
                         </Col>
-                        <Col className='col-2 mx-2'></Col>
+                        {/* <Col className='col-2 mx-2'></Col> */}
                     </Row>
-                </Container>
+                {/* </Container> */}
             </Container>
-
-
         </>
     )
 }
 
-export default DarkDashboard;
+export default Dashboard;
