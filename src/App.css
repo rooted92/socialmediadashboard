@@ -74,9 +74,13 @@ body {
 }
 
 .title {
-  font-size: 1.4rem;
+  font-size: 1.65rem;
   font-weight: 700;
   color: var(--primaryText);
+}
+
+.mobileTitle {
+  
 }
 
 .lineMobile {
