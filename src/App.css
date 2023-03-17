@@ -82,7 +82,7 @@ body {
 }
 
 .followersTxt {
-  font-size: 1rem;
+  font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
 }
@@ -93,7 +93,7 @@ body {
 
 .facebookDiv {
   background-color: var(--cardBg);
-  min-width: 12rem; 
+  max-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
@@ -103,7 +103,7 @@ body {
 
 .twitterDiv {
   background-color: var(--cardBg);
-  min-width: 12rem; 
+  max-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
@@ -113,7 +113,7 @@ body {
 
 .instagramDiv {
   background-color: var(--cardBg);
-  min-width: 12rem; 
+  max-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);
@@ -129,7 +129,7 @@ body {
 
 .youtubeDiv {
   background-color: var(--cardBg);
-  min-width: 12rem; 
+  max-width: 15rem; 
   min-height: 10rem;
   border-radius: .2rem .2rem .2rem .2rem;
   color: var(--secondaryText);

@@ -31,7 +31,7 @@ const DarkDashboard = () => {
 
     return (
         <>
-            <Container className='mt-5'>
+            <Container className='p-5'>
                 <Row>
                     {/* <Col className='col-2 '></Col> */}
                     <Col className='col-8 d-flex flex-column align-items-start'>

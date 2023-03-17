@@ -22,7 +22,7 @@ const DarkSocialMediaCard = ({ logo, socialMediaCard, divColor, handle, arrowImg
                         </Col>
                     </Row>
                     <Row>
-                        <Col className='col-12 d-flex flex-row justify-content-center mb-5'>
+                        <Col className='col-12 d-flex flex-row justify-content-center mb-4'>
                             <img src={arrowImg} alt='up-down-img' height={'4px'} width={'auto'} className='mt-2 mx-1' ></img>
                             <p className={txtColor}>{smallNumbers}</p>
                             <p className={txtColor}>Today</p>
