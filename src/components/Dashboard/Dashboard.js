@@ -4,7 +4,7 @@ import '../../App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import SocialMediaCard from './SocialMediaCard';
 import OverviewCard from './OverviewCard';
-import DarkToggle from './Toggle';
+import ToggleTheme from '../hooks/Toggle';
 import facebookLogo from '../../images/icon-facebook.svg';
 import instagramLogo from '../../images/icon-instagram.svg';
 import twitterLogo from '../../images/icon-twitter.svg';
@@ -33,15 +33,16 @@ const Dashboard = () => {
     return (
         <>
             <Container className='p-5'>
-                <Row>
+                <Row className='mb-4'>
                     {/* <Col className='col-2 '></Col> */}
                     <Col className='col-8 d-flex flex-column align-items-start'>
                         <p className='title m-0'>Social Media Dashboard</p>
                         <p className='m-0 bold'>Total Followers: 23,004</p>
                     </Col>
                     {/* <Col className='col-2'></Col> */}
-                    <Col className='col-4 d-flex flex-column align-items-end'>
-                        <DarkToggle toggleFunc={handleThemeToggle} />
+                    <Col className='col-4 d-flex flex-row justify-content-end'>
+                        <p className='mx-2 mt-3 bold'>Dark Mode</p>
+                        <ToggleTheme toggleFunc={handleThemeToggle} />
                     </Col>
                     {/* <Col className='col-2'></Col> */}
                 </Row>
@@ -111,6 +112,9 @@ const Dashboard = () => {
                             statDataType={'Page Views'}
                             logo={facebookLogo}
                             statDataNumbers={87}
+                            arrowImg={IconUp}
+                            txtColor={'greenTxt'}
+                            percentage={3}
                             overviewCard={'overviewCard'} />
                         </Col>
                         <Col className='col-3'>
@@ -118,6 +122,9 @@ const Dashboard = () => {
                             statDataType={'Likes'}
                             logo={facebookLogo}
                             statDataNumbers={52}
+                            arrowImg={IconDown}
+                            txtColor={'redTxt'}
+                            percentage={2}
                             overviewCard={'overviewCard'} />
                         </Col>
                         <Col className='col-3'>
@@ -125,16 +132,66 @@ const Dashboard = () => {
                             statDataType={'Likes'}
                             logo={instagramLogo}
                             statDataNumbers={5462}
+                            arrowImg={IconUp}
+                            txtColor={'greenTxt'}
+                            percentage={2257}
                             overviewCard={'overviewCard'} />
                         </Col>
                         <Col className='col-3'>
                             <OverviewCard
                             statDataType={'Profile Views'}
                             logo={instagramLogo}
-                            statDataNumbers={52}
+                            statDataNumbers={52 + 'k'}
+                            arrowImg={IconUp}
+                            txtColor={'greenTxt'}
+                            percentage={1375}
                             overviewCard={'overviewCard'} />
                         </Col>
                         {/* <Col className='col-2 mx-2'></Col> */}
+                    </Row>
+                    {/* Second row of overview cards */}
+                    <Row className='mt-4'>
+                        {/* <Col className='col-2 mx-2'></Col> */}
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Retweets'}
+                            logo={twitterLogo}
+                            statDataNumbers={117}
+                            arrowImg={IconUp}
+                            txtColor={'greenTxt'}
+                            percentage={303}
+                            overviewCard={'overviewCard'} />
+                        </Col>
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Likes'}
+                            logo={twitterLogo}
+                            statDataNumbers={507}
+                            arrowImg={IconUp}
+                            txtColor={'greenTxt'}
+                            percentage={553}
+                            overviewCard={'overviewCard'} />
+                        </Col>
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Likes'}
+                            logo={youtubeLogo}
+                            statDataNumbers={107}
+                            arrowImg={IconDown}
+                            txtColor={'redTxt'}
+                            percentage={19}
+                            overviewCard={'overviewCard'} />
+                        </Col>
+                        <Col className='col-3'>
+                            <OverviewCard
+                            statDataType={'Total Views'}
+                            logo={youtubeLogo}
+                            statDataNumbers={1407}
+                            arrowImg={IconDown}
+                            txtColor={'redTxt'}
+                            percentage={12}
+                            overviewCard={'overviewCard'} />
+                        </Col>
                     </Row>
                 {/* </Container> */}
             </Container>

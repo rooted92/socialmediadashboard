@@ -7,22 +7,27 @@ const OverviewCard = ({ overviewCard, logo, arrowImg, statDataType, statDataNumb
     return (
         <div className={overviewCard}>
             <Container>
-                <Row>
-                    <Col className='col-6'>
-                        <p>{statDataType}</p>
+                <Row className='mx-2'>
+                    {/* <Col className='col-1'></Col> */}
+                    <Col className='col-6 d-flex justify-content-start p-0'>
+                        <p className='bold'>{statDataType}</p>
                     </Col>
-                    <Col className='col-6'>
+                    <Col className='col-6 d-flex flex-column align-items-end p-0'>
                         <img src={logo} alt='social-media-logo'></img>
                     </Col>
+                    {/* <Col className='col-1'></Col> */}
                 </Row>
-                <Row>
-                    <Col className='col-6'>
-                        <p>{statDataNumbers}</p>
+                <Row className='mx-1'>
+                    {/* <Col className='col-1'></Col> */}
+                    <Col className='col-6 d-flex flex-column align-self-end text-start p-0'>
+                        <p className='overviewNumbers mt-1 mx-1'>{statDataNumbers}</p>
                     </Col>
-                    <Col className='col-6'>
-                        <img src={arrowImg} alt='up-down-arrow'></img>
+                    {/* <Col className='col-3'></Col> */}
+                    <Col className='col-6 d-flex flex-row justify-content-end mt-3 p-0'>
+                        <img src={arrowImg} alt='up-down-arrow' className='mt-2' height={'4px'} width={'auto'}></img>
                         <p className={txtColor}>{percentage}%</p>
                     </Col>
+                    {/* <Col className='col-1'></Col> */}
                 </Row>
             </Container>
         </div>
