@@ -3,7 +3,7 @@ Folder for dark theme folder for light theme
 make a bool in App component that checks toggle if true make dark if false make light
 make darkdashboard component, lightdashboard component, toggle component, socialmediacard component, overviewcard component
 
-
+Azure deployment link: https://smdashboard.azurewebsites.net/
 
 # Getting Started with Create React App
 
